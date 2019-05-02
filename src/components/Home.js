@@ -50,6 +50,18 @@ const Home=(props)=>{
                     </CardActions>
                 </Card>
             </Grid>
+            <Grid item>
+                <Card className={classes.card}>
+                    <CardContent>
+                        <Typography variant="h3">
+                        Calendar
+                        </Typography>
+                    </CardContent>
+                    <CardActions>  
+                        <Button variant="contained" color="primary" size="medium"><Link to="/calendar" style={{color:"white",textDecoration:"none"}}>Show</Link>{''}</Button>
+                    </CardActions>
+                </Card>
+            </Grid>
         </Grid>
       </div>
     )

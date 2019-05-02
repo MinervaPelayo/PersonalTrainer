@@ -23,9 +23,10 @@ const NavBar=(props)=>{
         <AppBar position="static">
         <Toolbar>
           <Typography variant="h3" color="inherit" style={{textAlign:"left"}} className={classes.grow}>
-            TrainMe
+            TrainMe - {props.user.displayName}
           </Typography>
           <Button color="inherit"><Link to="/" style={{color:"white",textDecoration:"none"}}>Home</Link>{''}</Button>
+          <Button variant="contained" color="secondary" onClick={props.signOut}>Sign Out</Button>
         </Toolbar>
         </AppBar>
       </div>
